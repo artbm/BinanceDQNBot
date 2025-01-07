@@ -25,7 +25,8 @@ async def main():
         # Initialize Binance client
         client = Client(
             os.getenv("BINANCE_API_KEY"),
-            os.getenv("BINANCE_API_SECRET")
+            os.getenv("BINANCE_API_SECRET"),
+            testnet=config["trading"].get("testnet")
         )
 
         # Initialize components

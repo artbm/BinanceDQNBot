@@ -11,6 +11,7 @@ trading:
   min_volume: 100000
   cooldown_period: 300
   max_slippage: 0.1
+  testnet: true
 
 risk:
   max_drawdown: 10.0
