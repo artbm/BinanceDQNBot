@@ -62,7 +62,7 @@ This trading bot implements a Deep Q-Network (DQN) architecture to learn and ada
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/trading-bot.git
+git clone https://github.com/artbm/BinanceDQNBot.git
 cd trading-bot
 ```
 
@@ -136,17 +136,43 @@ python -m trading_bot.main
 
 ```
 trading_bot/
-├── config/                 # Configuration files
-├── src/                   # Source code
-│   ├── environment.py     # Trading environment
-│   ├── agent.py          # DQN agent implementation
-│   ├── risk_manager.py   # Risk management
-│   ├── data_manager.py   # Market data handling
-│   └── utils/            # Utilities
-├── tests/                # Test suite
-├── notebooks/            # Analysis notebooks
-├── logs/                 # Log files
-└── models/              # Saved model checkpoints
+├── .env.example
+├── .gitignore
+├── config
+│   ├── init.py
+│   ├── config.yaml
+│   └── model_config.yaml
+├── logs
+│   └── .gitkeep
+├── models
+│   └── .gitkeep
+├── notebooks
+│   └── backtest.ipynb
+├── README.md
+├── requirements.txt
+├── setup.py
+├── src
+│   ├── __init__.py
+│   ├── agent.py
+│   ├── data_manager.py
+│   ├── environment.py
+│   ├── main.py
+│   ├── risk_manager.py
+│   └── utils/
+│       ├── __init__.py
+│       ├── logger.py
+│       ├── metrics.py
+│       └── notifications.py ├── tests
+│   ├── __init__.py
+│   ├── test_agent.py
+│   ├── test_environment.py
+│   └── test_risk_manager.py └── venv
+    ├── bin/
+    ├── include/
+    ├── lib/
+    ├── lib64/
+    ├── pyvenv.cfg
+    └── share/
 ```
 
 ## Safety and Risk Management
